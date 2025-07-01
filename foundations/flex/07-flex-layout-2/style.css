@@ -12,7 +12,6 @@ body {
 
 .footer {
   height: 72px;
-  background: #eee;
   color: darkmagenta;
 }
 
@@ -26,4 +25,64 @@ body {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+}
+
+/* Solution */
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content {
+  display: flex;
+  flex-grow: 1;
+}
+
+.text {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 48px;
+}
+
+.sidebar {
+  flex-basis: 300px;
+  flex-shrink: 0;
+  padding-left: 12px;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding-inline-start: 0%;
+  gap: 12px;
+  font-size: 24px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.card {
+  flex-basis: 300px;
+  padding: 8px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+}
+
+.header {
+  font-weight: 900;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
 }
